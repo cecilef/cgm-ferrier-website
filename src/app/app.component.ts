@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cgm-ferrier-website';
+  public isBurgerIconActive: boolean = false;
+
+  public updateBurgerState(): void {
+    this.isBurgerIconActive = !this.isBurgerIconActive;
+  }
 }

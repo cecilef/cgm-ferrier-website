@@ -1,0 +1,45 @@
+@import "../styles/resources";
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.45);
+  box-shadow: $inset-box-shadow;
+}
+
+.logo-container {
+  background: url(/assets/images/logo_horizontal.png) no-repeat;
+  min-height: 110px;
+  min-width: 265px;
+  background-size: 265px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.social-container /deep/ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: $space-l;
+
+  #github, #linkedin {
+    height: $icon-size;
+    width: $icon-size;
+  }
+}
+
+.github, .linkedin {
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+
+.burger-container {
+  position: absolute;
+  top: 0;
+}

@@ -1,0 +1,10 @@
+@import "../../styles/resources";
+
+.img-container {
+  background: url("/assets/images/portrait.jpg") no-repeat;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: $box-shadow;
+}
